@@ -1,15 +1,15 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
-import { getAuth, signInWithPhoneNumber, RecaptchaVerifier } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+import { initializeApp } from "firebase/app";
+import { getAuth, signInWithPhoneNumber, RecaptchaVerifier } from "firebase/auth";
 
-// Your Firebase configuration
+// Your Firebase configuration (env-dan olish)
 const firebaseConfig = {
-  apiKey: "AIzaSyChl1yTnnBXLZehIYrIpUQ2IfWKn-T0k3Y",
-  authDomain: "whatbro-40613.firebaseapp.com",
-  projectId: "whatbro-40613",
-  storageBucket: "whatbro-40613.firebasestorage.app",
-  messagingSenderId: "749624114326",
-  appId: "1:749624114326:web:f6310be55e7a9b983396b7"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
