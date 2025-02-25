@@ -1,13 +1,14 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
+  "description": "My Chat App",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js",
-  "build": "echo 'No build step needed'"
-}
+    "start": "node server.js",
+    "build": "echo 'No build step needed'"
+  },
   "dependencies": {
     "express": "^4.18.2",
-    "firebase": "^10.4.0"
+    "firebase": "^10.7.1"
   }
 }
