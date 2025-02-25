@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email orqali tizimga kirish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Email orqali tizimga kirish</h2>
+
+        <div id="email-container">
+            <input type="email" id="email" placeholder="Emailingizni kiriting">
+            <button onclick="sendCode()">Tayyor</button>
+        </div>
+
+        <div id="code-container" style="display: none;">
+            <input type="text" id="verificationCode" placeholder="Kod kiriting">
+            <button onclick="verifyCode()">Tasdiqlash</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
